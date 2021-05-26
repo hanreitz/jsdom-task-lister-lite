@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let newTask = document.createElement('li');
     newTask.innerText = taskDescription.value;
-    taskList.appendChild(newTask);
+    taskList.append(newTask);
+    taskDescription.value = '';
   })
 });
